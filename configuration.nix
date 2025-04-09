@@ -10,6 +10,7 @@ in {
 		chown ${username}:${group} ${home}/.config
 		chmod 700 ${home}/.config
 
+		rm -rf ${home}/.config/neofetch
 		mkdir ${home}/.config/neofetch
 		chown ${username}:${group} ${home}/.config/neofetch
 		chmod 700 ${home}/.config/neofetch
