@@ -60,7 +60,7 @@ sudo nixos-rebuild switch
 
 Run ```neofetch``` to see your system summary.
 
-Add this command to your .zshrc or .bashrc to see it everytime a new terminal is opened.
+Add this command to your ```.zshrc``` or ```.bashrc``` to see it everytime a new terminal is opened.
 
 ## ❤️ Support
 
