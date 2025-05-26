@@ -87,7 +87,46 @@ Once imported, rebuild your system to apply changes
 sudo nixos-rebuild switch
 ```
 
-### 🍴 Method 2 : Fork
+### ❄️ Method 2 : Flake Installation
+
+Want to install via Nix Flakes?
+
+1. Fetch the flake directly as an input in your flake.nix
+2. Import the nixosModule into your host configuration.nix file
+3. Set options.username to your username
+
+```
+#flake.nix
+-----------
+inputs = {
+  nixos-neofetch = "github:typovrak/nixos-neofetch";
+};
+
+outputs = { lib, ... } @ inputs:
+  nixosConfiguration.<YOUR-HOSTNAME>.nixpkgs.lib.nixosSystem {
+    modules = [
+      /path/to/configuration.nix
+    ]
+  }
+```
+```
+#configuration.nix
+-------------------
+{ lib, inputs, ... }:
+{
+  imports = [
+    inputs.nixos-neofetch.nixosModules.default
+  ];
+  
+  options.username = lib.mkOption {
+    type = lib.types.str;
+    default = "<YOUR-USERNAME-HERE>";
+  };
+}
+```
+
+
+### 🍴 Method 3 : Fork
 
 Want to **personalize** this module ?
 
