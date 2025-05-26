@@ -14,9 +14,9 @@
         lolcat
         lazygit
 
-        # dotfiles programs
-        inputs.dotfiles.packages.${system}.quick-results
-        inputs.dotfiles.packages.${system}.upjust
+        # gignsky-dotfiles programs
+        inputs.gignsky-dotfiles.packages.${system}.quick-results
+        inputs.gignsky-dotfiles.packages.${system}.upjust
       ];
       shellHook = ''
         echo "welcome to the development environment for the nixos-neofetch package" | ${pkgs.cowsay}/bin/cowsay | ${pkgs.lolcat}/bin/lolcat 2> /dev/null
