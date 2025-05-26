@@ -17,8 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # personal repos
-    dotfiles = {
+    gignsky-dotfiles = {
       url = "github:gignsky/dotfiles";
       flake = true;
     };

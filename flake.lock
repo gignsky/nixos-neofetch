@@ -65,7 +65,7 @@
     "crane": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "tarballer",
@@ -105,7 +105,7 @@
     "crane_3": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "tarballer",
@@ -144,36 +144,6 @@
     },
     "dotfiles": {
       "inputs": {
-        "flake-utils": "flake-utils",
-        "home-manager": "home-manager",
-        "neve": "neve",
-        "nix-secrets": "nix-secrets",
-        "nixos-wsl": "nixos-wsl",
-        "nixpkgs": "nixpkgs_3",
-        "nixpkgs-unstable": "nixpkgs-unstable",
-        "pre-commit-hooks": "pre-commit-hooks",
-        "sops-nix": "sops-nix",
-        "tax-matrix": "tax-matrix",
-        "treefmt-nix": "treefmt-nix_4",
-        "vscode-server": "vscode-server_2",
-        "wrap": "wrap"
-      },
-      "locked": {
-        "lastModified": 1748276398,
-        "narHash": "sha256-hP7YbZEbWM5m1MEbUZTY80uxmYFvwzjoW01PK8hVmt4=",
-        "owner": "gignsky",
-        "repo": "dotfiles",
-        "rev": "24139499aac0f1c992be1b559d56358284c739d4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gignsky",
-        "repo": "dotfiles",
-        "type": "github"
-      }
-    },
-    "dotfiles_2": {
-      "inputs": {
         "flake-utils": "flake-utils_4",
         "home-manager": "home-manager_2",
         "nix-secrets": "nix-secrets_2",
@@ -200,7 +170,7 @@
         "type": "github"
       }
     },
-    "dotfiles_3": {
+    "dotfiles_2": {
       "inputs": {
         "flake-utils": "flake-utils_5",
         "home-manager": "home-manager_3",
@@ -326,8 +296,26 @@
     },
     "flake-parts": {
       "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1743550720,
+        "narHash": "sha256-hIshGgKZCgWh6AYJpJmRgFdR3WUbkY04o82X05xqQiY=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "c621e8422220273271f52058f618c94e405bb0f5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-parts_2": {
+      "inputs": {
         "nixpkgs-lib": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "neve",
           "nixvim",
           "nixpkgs"
@@ -347,10 +335,10 @@
         "type": "github"
       }
     },
-    "flake-parts_2": {
+    "flake-parts_3": {
       "inputs": {
         "nixpkgs-lib": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "tarballer",
@@ -371,9 +359,9 @@
         "type": "github"
       }
     },
-    "flake-parts_3": {
+    "flake-parts_4": {
       "inputs": {
-        "nixpkgs-lib": "nixpkgs-lib"
+        "nixpkgs-lib": "nixpkgs-lib_2"
       },
       "locked": {
         "lastModified": 1743550720,
@@ -389,10 +377,10 @@
         "type": "github"
       }
     },
-    "flake-parts_4": {
+    "flake-parts_5": {
       "inputs": {
         "nixpkgs-lib": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "tarballer",
@@ -405,24 +393,6 @@
         "owner": "hercules-ci",
         "repo": "flake-parts",
         "rev": "567b938d64d4b4112ee253b9274472dc3a346eb6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "type": "github"
-      }
-    },
-    "flake-parts_5": {
-      "inputs": {
-        "nixpkgs-lib": "nixpkgs-lib_2"
-      },
-      "locked": {
-        "lastModified": 1743550720,
-        "narHash": "sha256-hIshGgKZCgWh6AYJpJmRgFdR3WUbkY04o82X05xqQiY=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "c621e8422220273271f52058f618c94e405bb0f5",
         "type": "github"
       },
       "original": {
@@ -539,6 +509,36 @@
         "type": "github"
       }
     },
+    "gignsky-dotfiles": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "home-manager": "home-manager",
+        "neve": "neve",
+        "nix-secrets": "nix-secrets",
+        "nixos-wsl": "nixos-wsl",
+        "nixpkgs": "nixpkgs_3",
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "pre-commit-hooks": "pre-commit-hooks",
+        "sops-nix": "sops-nix",
+        "tax-matrix": "tax-matrix",
+        "treefmt-nix": "treefmt-nix_4",
+        "vscode-server": "vscode-server_2",
+        "wrap": "wrap"
+      },
+      "locked": {
+        "lastModified": 1748276398,
+        "narHash": "sha256-hP7YbZEbWM5m1MEbUZTY80uxmYFvwzjoW01PK8hVmt4=",
+        "owner": "gignsky",
+        "repo": "dotfiles",
+        "rev": "24139499aac0f1c992be1b559d56358284c739d4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gignsky",
+        "repo": "dotfiles",
+        "type": "github"
+      }
+    },
     "git-hooks": {
       "flake": false,
       "locked": {
@@ -622,7 +622,7 @@
     "gitignore": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "pre-commit-hooks",
           "nixpkgs"
         ]
@@ -644,7 +644,7 @@
     "gitignore_2": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "pre-commit-hooks",
@@ -668,7 +668,7 @@
     "gitignore_3": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "pre-commit-hooks",
@@ -692,7 +692,7 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "nixpkgs"
         ]
       },
@@ -714,7 +714,7 @@
     "home-manager_2": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "nixpkgs"
@@ -738,7 +738,7 @@
     "home-manager_3": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "nixpkgs"
@@ -762,14 +762,14 @@
     "ixx": {
       "inputs": {
         "flake-utils": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "neve",
           "nixvim",
           "nuschtosSearch",
           "flake-utils"
         ],
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "neve",
           "nixvim",
           "nuschtosSearch",
@@ -869,7 +869,7 @@
       "inputs": {
         "flake-compat": "flake-compat",
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "nixpkgs-unstable"
         ]
       },
@@ -942,6 +942,21 @@
     },
     "nixpkgs-lib": {
       "locked": {
+        "lastModified": 1743296961,
+        "narHash": "sha256-b1EdN3cULCqtorQ4QeWgLMrd5ZGOjLSLemfa00heasc=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "e4822aea2a6d1cdd36653c134cacfd64c97ff4fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib_2": {
+      "locked": {
         "lastModified": 1745716251,
         "narHash": "sha256-fI6UzabnzH2mU8e3c5fZPQiWziGERhexCMmS8Vv5ytI=",
         "owner": "nix-community",
@@ -955,28 +970,13 @@
         "type": "github"
       }
     },
-    "nixpkgs-lib_2": {
+    "nixpkgs-lib_3": {
       "locked": {
         "lastModified": 1746321463,
         "narHash": "sha256-43ZRYqB6pkhfKPZamMbuD/JrGYcapX87feHxMNyfyDQ=",
         "owner": "nix-community",
         "repo": "nixpkgs.lib",
         "rev": "168ab62539da203ca62ab16b7f8cf411530b91e7",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "type": "github"
-      }
-    },
-    "nixpkgs-lib_3": {
-      "locked": {
-        "lastModified": 1743296961,
-        "narHash": "sha256-b1EdN3cULCqtorQ4QeWgLMrd5ZGOjLSLemfa00heasc=",
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "rev": "e4822aea2a6d1cdd36653c134cacfd64c97ff4fa",
         "type": "github"
       },
       "original": {
@@ -1291,7 +1291,7 @@
     },
     "nixvim": {
       "inputs": {
-        "flake-parts": "flake-parts",
+        "flake-parts": "flake-parts_2",
         "nixpkgs": "nixpkgs_2",
         "nuschtosSearch": "nuschtosSearch"
       },
@@ -1314,7 +1314,7 @@
         "flake-utils": "flake-utils_3",
         "ixx": "ixx",
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "neve",
           "nixvim",
           "nixpkgs"
@@ -1458,8 +1458,8 @@
     },
     "root": {
       "inputs": {
-        "dotfiles": "dotfiles",
-        "flake-parts": "flake-parts_6",
+        "flake-parts": "flake-parts",
+        "gignsky-dotfiles": "gignsky-dotfiles",
         "git-hooks": "git-hooks_5",
         "nixpkgs": "nixpkgs_17",
         "systems": "systems_10",
@@ -1470,7 +1470,7 @@
       "inputs": {
         "crane": "crane",
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "tarballer",
@@ -1496,7 +1496,7 @@
       "inputs": {
         "crane": "crane_2",
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "nixpkgs"
         ],
@@ -1520,7 +1520,7 @@
       "inputs": {
         "crane": "crane_3",
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "tarballer",
@@ -1546,7 +1546,7 @@
       "inputs": {
         "crane": "crane_4",
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "nixpkgs"
         ],
@@ -1585,7 +1585,7 @@
     "rust-overlay_2": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "rust-flake",
           "nixpkgs"
@@ -1624,7 +1624,7 @@
     "rust-overlay_4": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "rust-flake",
           "nixpkgs"
@@ -1647,7 +1647,7 @@
     "sops-nix": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "nixpkgs-unstable"
         ]
       },
@@ -1857,7 +1857,7 @@
     "tarballer": {
       "inputs": {
         "cargo-doc-live": "cargo-doc-live_2",
-        "flake-parts": "flake-parts_2",
+        "flake-parts": "flake-parts_3",
         "git-hooks": "git-hooks",
         "nixpkgs": "nixpkgs_9",
         "process-compose-flake": "process-compose-flake",
@@ -1882,7 +1882,7 @@
     "tarballer_2": {
       "inputs": {
         "cargo-doc-live": "cargo-doc-live_4",
-        "flake-parts": "flake-parts_4",
+        "flake-parts": "flake-parts_5",
         "git-hooks": "git-hooks_3",
         "nixpkgs": "nixpkgs_15",
         "process-compose-flake": "process-compose-flake_3",
@@ -1907,8 +1907,8 @@
     "tax-matrix": {
       "inputs": {
         "cargo-doc-live": "cargo-doc-live",
-        "dotfiles": "dotfiles_2",
-        "flake-parts": "flake-parts_3",
+        "dotfiles": "dotfiles",
+        "flake-parts": "flake-parts_4",
         "git-hooks": "git-hooks_2",
         "nixpkgs": "nixpkgs_10",
         "process-compose-flake": "process-compose-flake_2",
@@ -1934,7 +1934,7 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "tarballer",
@@ -1958,7 +1958,7 @@
     "treefmt-nix_2": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "nixpkgs"
@@ -1981,7 +1981,7 @@
     "treefmt-nix_3": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "nixpkgs"
         ]
@@ -2003,7 +2003,7 @@
     "treefmt-nix_4": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "nixpkgs"
         ]
       },
@@ -2024,7 +2024,7 @@
     "treefmt-nix_5": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "tarballer",
@@ -2048,7 +2048,7 @@
     "treefmt-nix_6": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "nixpkgs"
@@ -2071,7 +2071,7 @@
     "treefmt-nix_7": {
       "inputs": {
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "nixpkgs"
         ]
@@ -2113,13 +2113,13 @@
     "vscode-server": {
       "inputs": {
         "flake-utils": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "flake-utils"
         ],
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "tax-matrix",
           "dotfiles",
           "nixpkgs"
@@ -2142,11 +2142,11 @@
     "vscode-server_2": {
       "inputs": {
         "flake-utils": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "flake-utils"
         ],
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "nixpkgs"
         ]
       },
@@ -2167,13 +2167,13 @@
     "vscode-server_3": {
       "inputs": {
         "flake-utils": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "flake-utils"
         ],
         "nixpkgs": [
-          "dotfiles",
+          "gignsky-dotfiles",
           "wrap",
           "dotfiles",
           "nixpkgs"
@@ -2196,8 +2196,8 @@
     "wrap": {
       "inputs": {
         "cargo-doc-live": "cargo-doc-live_3",
-        "dotfiles": "dotfiles_3",
-        "flake-parts": "flake-parts_5",
+        "dotfiles": "dotfiles_2",
+        "flake-parts": "flake-parts_6",
         "git-hooks": "git-hooks_4",
         "nixpkgs": "nixpkgs_16",
         "process-compose-flake": "process-compose-flake_4",
