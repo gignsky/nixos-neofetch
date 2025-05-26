@@ -36,21 +36,11 @@ single-update:
 # Update dependencies and the Nix flake lock file, committing the changes
 update:
 	just dont-fuck-my-build
-	cargo-update
 	nix flake update --commit-lock-file
 
 # Update dependencies and the Nix flake lock file without committing the changes
 update-no-commit:
 	just dont-fuck-my-build
-	cargo-update --no-commit
-	nix flake update
-
-# Update only the Nix flake lock file, committing the changes
-update-flake:
-	nix flake update --commit-lock-file
-
-# Update only the Nix flake lock file without committing the changes
-update-flake-no-commit:
 	nix flake update
 
 
