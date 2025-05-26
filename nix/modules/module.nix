@@ -3,7 +3,7 @@
   flake.nixosModules = {
     neofetch = {
       imports = [
-        ../../config.nix
+        ../../config-maker.nix
         ../../configuration.nix
         inputs.nixos-typovrak.nixosModules.variables
       ];
