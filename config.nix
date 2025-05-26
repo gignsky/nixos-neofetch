@@ -1,6 +1,4 @@
 { lib, ... }:
-let cfg = config.programs.neofetch;
-in
 {
   options.programs.neofetch = {
     os = lib.mkOption {
