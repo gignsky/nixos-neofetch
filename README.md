@@ -117,11 +117,8 @@ outputs = { lib, ... } @ inputs:
   imports = [
     inputs.nixos-neofetch.nixosModules.default
   ];
-  
-  options.username = lib.mkOption {
-    type = lib.types.str;
-    default = "<YOUR-USERNAME-HERE>";
-  };
+
+  config.username = "<YOUR-USERNAME-HERE>";
 }
 ```
 
