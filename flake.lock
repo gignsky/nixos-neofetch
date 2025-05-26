@@ -3637,16 +3637,15 @@
         "treefmt-nix": "treefmt-nix_31"
       },
       "locked": {
-        "lastModified": 1748281042,
+        "lastModified": 1748283488,
         "narHash": "sha256-ORlMmez+1A/rL8DMmHA2O6dwzoq32y6JxLwym5JEv3s=",
         "owner": "gignsky",
         "repo": "nixos-typovrak",
-        "rev": "bf4cd93ffac8c7e6d301fa33854b783b1dbb115e",
+        "rev": "fff3d8e1e60c1083665e22f4816eaa165f8a24b4",
         "type": "github"
       },
       "original": {
         "owner": "gignsky",
-        "ref": "feature/add-variables-module",
         "repo": "nixos-typovrak",
         "type": "github"
       }

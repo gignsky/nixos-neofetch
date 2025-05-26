@@ -8,7 +8,7 @@
     systems.url = "github:nix-systems/default";
 
     nixos-typovrak = {
-      url = "github:gignsky/nixos-typovrak/feature/add-variables-module";
+      url = "github:gignsky/nixos-typovrak";
     };
 
     git-hooks = {
