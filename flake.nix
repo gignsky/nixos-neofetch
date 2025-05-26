@@ -8,7 +8,7 @@
     systems.url = "github:nix-systems/default";
 
     nixos-typovrak = {
-      url = "github:gignsky/nixos-typovrak";
+      url = "github:typovrak/nixos";
     };
 
     git-hooks = {
