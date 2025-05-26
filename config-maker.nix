@@ -1,5 +1,6 @@
 { lib, ... }:
 {
+  config = { };
   options = {
     programs.neofetch = {
       os = lib.mkOption {
