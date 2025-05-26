@@ -6,21 +6,6 @@ let
   home = config.users.users.${username}.home;
 in
 {
-  options.username = lib.mkOption {
-    type = lib.types.str;
-    description = "The username for which to install Neofetch config.";
-    example = "alice";
-  };
-
-  config = {
-    assertions = [
-      {
-        assertion = config ? username && config.users.users ? ${username};
-        message = "You must set 'username' and define users.users.${username} in your configuration.";
-      }
-    ];
-  };
-
   system.activationScripts.neofetch = ''
     		mkdir -p ${home}/.config
     		chown ${username}:${group} ${home}/.config
