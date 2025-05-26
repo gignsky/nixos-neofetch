@@ -1,6 +1,6 @@
 { lib, ... }:
 {
-  options.programs.neofetch = {
+  programs.neofetch = {
     os = lib.mkOption {
       type = lib.types.bool;
       default = true;
