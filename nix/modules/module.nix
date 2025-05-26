@@ -1,7 +1,11 @@
 { inputs, ... }:
 {
   flake.nixosModules = {
-    neofetch = import ../../configuration.nix;
-    default = import ../../configuration.nix;
+    neofetch = {
+      imports = [
+        ../../configuration.nix
+        inputs.nixos-typovrak.nixosModules.variables
+      ];
+    };
   };
 }

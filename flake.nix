@@ -7,6 +7,10 @@
     };
     systems.url = "github:nix-systems/default";
 
+    nixos-typovrak = {
+      url = "github:gignsky/nixos-typovrak/feature/add-variables-module";
+    };
+
     git-hooks = {
       url = "github:cachix/git-hooks.nix";
       flake = false;
